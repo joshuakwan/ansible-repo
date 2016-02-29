@@ -1,4 +1,5 @@
 --- 
 - hosts: all 
   tasks: 
-    - command: echo "hello world"
+  - name: create
+    template: src=templates/now.j2 dest=/tmp/now
