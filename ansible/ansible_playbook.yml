@@ -1,5 +1,5 @@
 --- 
 - hosts: all 
   tasks: 
-  - name: create
-    template: src=templates/now.j2 dest=/tmp/now
+  - name: write current datetime into /tmp/now
+    template: src=now.j2 dest=/tmp/now
